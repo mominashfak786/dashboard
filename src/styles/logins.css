@@ -1,0 +1,139 @@
+.mainloginform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100wh;
+  height: 85vh;
+  border: 0px solid rgb(249, 249, 249);
+}
+
+.logo {
+  width: 22.5%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.shadows {
+  width: 100wh;
+  height: 13vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 90%;
+  }
+}
+
+.form {
+  min-width: 350px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease-in-out;
+  border: 2px solid rgba(101, 93, 93, 0.34);
+}
+
+@media screen and (max-width: 1440px) {
+  .form {
+    width: 100px;
+    height: 300px;
+    margin-top: 20px;
+  }
+}
+
+.heading {
+  text-align: center;
+  color: black;
+  top: 3em;
+  font-weight: bold;
+}
+
+.check {
+  align-self: center;
+  top: 4em;
+}
+.link {
+  text-align: center;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.input {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 2.2em;
+  height: 2.5em;
+  margin: 0.5em;
+  border-radius: 6px;
+  border: 1px solid black;
+  outline: none;
+  background-color: rgb(235, 235, 235);
+  transition: 0.9s ease-in-out;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.input:hover {
+  box-shadow: inset 0px 0px 0px #f6ecec, inset 0px 0px 0px #ffffff;
+  background-color: rgb(252, 247, 247);
+}
+
+.input:focus {
+  box-shadow: inset 0px 0px 0px #edeaea, inset 0px 0px 0px #ffffff;
+  background-color: rgb(255, 255, 255);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.click {
+  margin: 1rem auto;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.click:hover {
+  background-color: #333;
+}
+
+.click:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #7a5fff;
+}
+
+.blue-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.blue-link:hover {
+  color: #2b31d6;
+  text-decoration: none;
+}
