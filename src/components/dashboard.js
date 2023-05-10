@@ -527,7 +527,7 @@ const Dashboard = () => {
         <img
           src="https://www.letusmaintain.com/img/logo.png"
           alt="Logo"
-          className="logo"
+          className="logo1"
         />
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
@@ -572,7 +572,7 @@ const Dashboard = () => {
               className="img logo rounded-circle mb-5"
               style={{
                 backgroundImage:
-                  "url(http://frontendfreecode.com/img/user.jpg)",
+                  "url(https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg)",
               }}
             />
             <ul className="list-unstyled components mb-2">

@@ -5,7 +5,10 @@
     height: rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
-
+.logo1{
+  width: 300px;
+  margin-left: 10px;
+}
 
 .img {
   background-size: cover;
