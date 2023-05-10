@@ -7,7 +7,17 @@ const Dashboard = () => {
   function HomeInformation() {
     return (
       <div>
-        <h3>Welcome to Letusmaintain.com Channel Partner Dashboard</h3>
+        <div class="entry-page">
+          <p
+            style={{
+              textAlign: "center",
+              fontSize: "35px",
+              marginTop: "10rem",
+            }}
+          >
+            Welcome to Letusmaintain.com Channel Partner Dashboard
+          </p>
+        </div>
       </div>
     );
   }
@@ -15,40 +25,388 @@ const Dashboard = () => {
   function AccountInformation() {
     return (
       <div>
-        <h3>Account Details</h3>
+        <section style={{ backgroundColor: "#eee" }}>
+          <div className="container py-5">
+            <div className="row">
+              <div className="col-lg-4">
+                <div className="card mb-4">
+                  <div className="card-body text-center">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                      alt="avatar"
+                      className="rounded-circle img-fluid"
+                      style={{ width: 150 }}
+                    />
+                    <h5 className="my-3">John Smith</h5>
+                    <p className="text-muted mb-1">Full Stack Developer</p>
+                    <p className="text-muted mb-4">
+                      Bay Area, San Francisco, CA
+                    </p>
+                    <div className="d-flex justify-content-center mb-2">
+                      <button type="button" className="btn btn-primary">
+                        Edit
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-outline-primary ms-1"
+                      >
+                        Update
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-8">
+                <div className="card mb-4">
+                  <div className="card-body">
+                    <div className="row">
+                      <div className="col-sm-3">
+                        <p className="mb-0">My Referral ID:</p>
+                      </div>
+                      <div className="col-sm-9">
+                        <p className="text-muted mb-0">xxxxxx</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                      <div className="col-sm-4">
+                        <p className="mb-0">Business Category :</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                      <div className="col-sm-4">
+                        <p className="mb-0">Business Name :</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                      <div className="col-sm-3">
+                        <p className="mb-0">ID Activated on:</p>
+                      </div>
+                      <div className="col-sm-9">
+                        <p className="text-muted mb-0">xx/xx/xxxx</p>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div className="row">
+                      <div className="col-sm-3">
+                        <p className="mb-0">Full Name:</p>
+                      </div>
+                      <div className="col-sm-9">
+                        <p className="text-muted mb-0">Johnatan Smith</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                      <div className="col-sm-3">
+                        <p className="mb-0">Email:</p>
+                      </div>
+                      <div className="col-sm-9">
+                        <p className="text-muted mb-0">example@example.com</p>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div className="row">
+                      <div className="col-sm-3">
+                        <p className="mb-0">Mobile:</p>
+                      </div>
+                      <div className="col-sm-9">
+                        <p className="text-muted mb-0">(098) 765-4321</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                      <div className="col-sm-3">
+                        <p className="mb-0">Address:</p>
+                      </div>
+                      <div className="col-sm-9">
+                        <p className="text-muted mb-0">
+                          Bay Area, San Francisco, CA
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
+
   function Referral() {
     return (
       <div>
-        <h3>Support Account</h3>
-        <p>Support information goes here</p>
+        <div className="form-group">
+          <h3>
+            <label style={{ color: "black" }}>
+              List of All Referrals Till date*
+            </label>
+          </h3>
+          <select id="referrals-dropdown" className="form-control">
+            <option value="">-- Select an option --</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option1">Option 4</option>
+            <option value="option2">Option 5</option>
+            <option value="option3">Option 6</option>
+          </select>
+        </div>
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Name of the lead</th>
+                <th>Solution Type</th>
+                <th>Category of Premises</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Add rows dynamically based on data */}
+              <tr>
+                <td>01/01/2023</td>
+                <td>Mr.Avinash Sharma</td>
+                <td> Full Solution Package</td>
+                <td>Residential</td>
+              </tr>
+              <tr>
+                <td>01/02/2023</td>
+                <td>Mr.Prasad Tetme</td>
+                <td>Energy Audit</td>
+                <td>Commercial</td>
+              </tr>
+              {/* Add more rows as needed */}
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }
   function Commissions() {
     return (
       <div>
-        <h3>Support Account</h3>
-        <p>Support information goes here</p>
+        <div className="form-group">
+          <h3>
+            <label style={{ color: "black" }}> Select from the list *</label>
+          </h3>
+          <select id="referrals-dropdown" className="form-control">
+            <option value="">-- Select an option --</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option1">Option 4</option>
+            <option value="option2">Option 5</option>
+            <option value="option3">Option 6</option>
+          </select>
+        </div>
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Name of the lead</th>
+                <th>Solution Type</th>
+                <th>Commission Amount </th>
+                <th> Payment Mode </th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Add rows dynamically based on data */}
+              <tr>
+                <td>01/01/2023</td>
+                <td>Mr.Avinash Sharma</td>
+                <td> Full Solution Package</td>
+                <td> SGD XXXXX</td>
+                <td>Bank Transfer </td>
+              </tr>
+              <tr>
+                <td>01/02/2023</td>
+                <td>Mr.Prasad Tetme</td>
+                <td>Energy Audit</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>Bank Transfer </td>
+              </tr>
+              {/* Add more rows as needed */}
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }
   function Update() {
     return (
       <div>
-        <h3>Support Account</h3>
-        <p>Support information goes here</p>
+        <div className="payout-form">
+          <h3>
+            <label style={{ color: "black" }}> Select any one of them:</label>
+          </h3>
+          <form>
+            <div className="row">
+              <div className="col-md-6">
+                <label className="checkbox-container">
+                  Bank Transfer
+                  <input
+                    type="checkbox"
+                    name="payout-type"
+                    defaultValue="bank-transfer"
+                  />
+                  <span className="checkmark" />
+                </label>
+              </div>
+              <div className="col-md-6">
+                <label className="checkbox-container">
+                  PayPal
+                  <input
+                    type="checkbox"
+                    name="payout-type"
+                    defaultValue="paypal"
+                  />
+                  <span className="checkmark" />
+                </label>
+              </div>
+              <div className="col-md-6">
+                <label className="checkbox-container">
+                  Payment Link
+                  <input
+                    type="checkbox"
+                    name="payout-type"
+                    defaultValue="payment-link"
+                  />
+                  <span className="checkmark" />
+                </label>
+              </div>
+            </div>
+            <div className="details">
+              <div className="row">
+                <div className="col-md-6">
+                  <label>Name of the Account Holder</label>
+                  <input type="text" name="account-holder-name" />
+                </div>
+                <div className="col-md-6">
+                  <label>Account Number</label>
+                  <input type="text" name="account-number" />
+                </div>
+                <div className="col-md-6">
+                  <label>Bank Name</label>
+                  <input type="text" name="bank-name" />
+                </div>
+                <div className="col-md-6">
+                  <label>Bank Address</label>
+                  <input type="text" name="bank-address" />
+                </div>
+                <div className="col-md-6">
+                  <label>SWIFT Code</label>
+                  <input type="text" name="swift-code" />
+                </div>
+                <div className="col-md-6">
+                  <label>IFSC Code</label>
+                  <input type="text" name="ifsc-code" />
+                </div>
+                <div className="col-md-6">
+                  <label>Mobile Number</label>
+                  <input type="text" name="mobile-number" />
+                </div>
+                <div className="col-md-6">
+                  <label>Your Address</label>
+                  <input type="text" name="your-address" />
+                </div>
+                <div className="col-md-6">
+                  <label>Enter the PayPal Details</label>
+                  <input type="text" name="paypal-details" />
+                </div>
+                <div className="col-md-6">
+                  <label>Enter the Payment Link</label>
+                  <input type="text" name="payment-link" />
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-dark mt-3"
+              style={{ textAlign: "center" }}
+            >
+              Done
+            </button>
+          </form>
+        </div>
       </div>
     );
   }
 
   function SupportInformation() {
     return (
-      <div>
-        <h3>Support Account</h3>
-        <p>Support information goes here</p>
+      <div className="supportcss">
+        <div className="container contact-form">
+          <div className="contact-image">
+            <img
+              src="https://image.ibb.co/kUagtU/rocket_contact.png"
+              alt="rocket_contact"
+            />
+          </div>
+
+          <form method="post">
+            <h3>Drop Us a Message</h3>
+            <div className="row">
+              <div className="col-md-6">
+                <div className="form-group">
+                  <input
+                    type="text"
+                    name="txtName"
+                    className="form-control"
+                    placeholder="Subject*"
+                    defaultValue=""
+                  />
+                </div>
+                <div className="form-group">
+                  <select className="form-control" name="type">
+                    <option value="">Select Type *</option>
+                    <option value="Account">Account</option>
+                    <option value="Payouts">Payouts</option>
+                    <option value="Complaint">Complaint</option>
+                    <option value="Question">Question</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div className="form-group">
+                  <input
+                    type="text"
+                    name="txtPhone"
+                    className="form-control"
+                    placeholder="Your Phone Number *"
+                    defaultValue=""
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="submit"
+                    name="btnSubmit"
+                    className="btnContact"
+                    defaultValue="Send Message"
+                    style={{ textAlign: "center" }}
+                  />
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="form-group">
+                  <textarea
+                    name="txtMsg"
+                    className="form-control"
+                    placeholder="Your Message *"
+                    style={{ width: "100%", height: 150 }}
+                    defaultValue={""}
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     );
   }
