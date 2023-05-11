@@ -38,7 +38,7 @@ const Login = () => {
               fontSize: "19px",
               textAlign: "center",
               fontWeight: "bold",
-              marginTop:'10px'
+              marginTop: "10px",
             }}
           >
             Channel Partner Login
@@ -130,10 +130,11 @@ const Login = () => {
             Remember Me
           </label>
 
-        
           <Link to="/dashboard" className="link">
-    <button className="click" type="submit">Login</button>
-  </Link>
+            <button className="click" type="submit">
+              Login
+            </button>
+          </Link>
           <p style={{ fontSize: "15px", textAlign: "center" }}>
             For Sign up as a Channel Partner{" "}
             <div class="blue-link">click here</div>

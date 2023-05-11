@@ -5,6 +5,19 @@
     height: rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
+
+  @media (max-width: 767px) {
+    .navbars {
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
+  @media (min-width: 800px) {
+    .navbar-toggler{
+      display: none;
+    }
+  }
+
 .logo1{
   width: 300px;
   margin-left: 10px;
@@ -20,14 +33,16 @@
   box-shadow: none;
 }
 #sidebar {
-  min-width: 300px;
-  max-width: 300px;
+
+  max-width: 350px;
   height: 100vh;
   background: #1d1919;
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
 #sidebar .logo {
@@ -65,9 +80,7 @@
   color: #f8b739;
 }
 @media (max-width: 991.98px) {
-  #sidebar {
-    margin-left: -300px;
-  }
+  
   #sidebar.active {
     margin-left: 0;
   }
